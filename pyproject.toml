@@ -1,0 +1,22 @@
+[project]
+name = "notion-ai-agent"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Mauro", email = "mauro.weber-partner@backlgrs.com.br" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.143.3",
+    "pydantic-settings>=2.16.0",
+    "python-dotenv>=1.2.4",
+    "uvicorn>=0.54.0",
+]
+
+[project.scripts]
+notion-ai-agent = "notion_ai_agent:main"
+
+[build-system]
+requires = ["uv_build>=0.13.1,<0.14.0"]
+build-backend = "uv_build"
